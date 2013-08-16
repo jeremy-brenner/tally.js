@@ -19,10 +19,27 @@ class TallyMarks
     $(next).remove() if $(next).hasClass('tally-mark')
 
     new_val = "#{( 5 for i in [0...fives] ).join('')}#{ if change == 0 then '' else change }"
-    
-    $hashEl = $el.after( $('<span>').addClass( $el.attr("class") ).addClass("tally-mark").text(new_val) )
-    $hashEl.css($el.attr("style") or '')
    
+    cssObject = new StyleConv($el.attr("style")).asObject()
+    classString = $el.attr("class")
+    $el.after( $('<span>').css(cssObject).addClass(classString).addClass("tally-mark").text(new_val) )
+
+   
+    
+class StyleConv
+  constructor: (style) ->
+    @style = style || ''
+
+  asArray: ->
+    @styleArray ?= @style.replace(/;\s*$/,'').split(/[:; ]+/)
+
+  asObject: ->
+    i = 0
+    o = {}
+    while @asArray().length > i+1
+      o[ @asArray()[i] ] = @asArray()[i+1]
+      i+=2
+    o
 
 window.TallyMarks = TallyMarks
 
