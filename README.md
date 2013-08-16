@@ -12,4 +12,4 @@ Include jquery, tally.css and tally.js.
 
 Then ust add the "tally" class to an element that contains an integer:
 
-   <span class="tally">13</span>
+    <span class="tally">13</span>
