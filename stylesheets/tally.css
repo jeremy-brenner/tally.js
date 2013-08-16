@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: 'tallymarksregular';
-    src: url('../fonts/tally_glyphs-webfont.eot');
-    src: url('../fonts/tally_glyphs-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/tally_glyphs-webfont.woff') format('woff'),
-         url('../fonts/tally_glyphs-webfont.ttf') format('truetype'),
-         url('../fonts/tally_glyphs-webfont.svg#tallymarksregular') format('svg');
+    src: url('/fonts/tally_glyphs-webfont.eot');
+    src: url('/fonts/tally_glyphs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/tally_glyphs-webfont.woff') format('woff'),
+         url('/fonts/tally_glyphs-webfont.ttf') format('truetype'),
+         url('/fonts/tally_glyphs-webfont.svg#tallymarksregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,7 +15,7 @@
   display: none;
 }
 
-.tally-mark {
+.tally-marks {
   display: inline-block;
   font-family: 'tallymarksregular';
 }

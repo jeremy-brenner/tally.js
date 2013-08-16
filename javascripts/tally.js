@@ -11,8 +11,8 @@
     }
 
     TallyMarks.prototype.bind_events = function() {
-      $('.tally').on('DOMSubtreeModified', this.changeEvent);
-      return $('.tally').trigger('DOMSubtreeModified');
+      $('.tally:not(.tally-marks)').on('DOMSubtreeModified', this.changeEvent);
+      return $('.tally:not(.tally-marks)').trigger('DOMSubtreeModified');
     };
 
     TallyMarks.prototype.changeEvent = function(e) {
@@ -28,7 +28,7 @@
       fives = parseInt(val / 5);
       change = Math.abs(val % 5);
       next = $el.next();
-      if ($(next).hasClass('tally-mark')) {
+      if ($(next).hasClass('tally-marks')) {
         $(next).remove();
       }
       new_val = "" + (((function() {
@@ -41,7 +41,7 @@
       })()).join('')) + (change === 0 ? '' : change);
       cssObject = new StyleConv($el.attr("style")).asObject();
       classString = $el.attr("class");
-      return $el.after($('<span>').css(cssObject).addClass(classString).addClass("tally-mark").text(new_val));
+      return $el.after($('<span>').css(cssObject).addClass(classString).addClass("tally-marks").text(new_val));
     };
 
     return TallyMarks;

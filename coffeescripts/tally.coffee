@@ -3,8 +3,8 @@ class TallyMarks
     @bind_events()
 
   bind_events: ->
-    $('.tally').on 'DOMSubtreeModified', @changeEvent
-    $('.tally').trigger 'DOMSubtreeModified'
+    $('.tally:not(.tally-marks)').on 'DOMSubtreeModified', @changeEvent
+    $('.tally:not(.tally-marks)').trigger 'DOMSubtreeModified'
 
   changeEvent: (e) =>
     @doTally $(e.currentTarget)
@@ -16,13 +16,13 @@ class TallyMarks
     change = Math.abs( val % 5 )
 
     next = $el.next()
-    $(next).remove() if $(next).hasClass('tally-mark')
+    $(next).remove() if $(next).hasClass('tally-marks')
 
     new_val = "#{( 5 for i in [0...fives] ).join('')}#{ if change == 0 then '' else change }"
    
     cssObject = new StyleConv($el.attr("style")).asObject()
     classString = $el.attr("class")
-    $el.after( $('<span>').css(cssObject).addClass(classString).addClass("tally-mark").text(new_val) )
+    $el.after( $('<span>').css(cssObject).addClass(classString).addClass("tally-marks").text(new_val) )
 
    
     
