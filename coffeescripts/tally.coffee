@@ -13,15 +13,15 @@ class TallyMarks
     val = parseInt( $el.text() )
     val = 0 if isNaN val
     fives = parseInt( val / 5 )
-    change = val % 5
+    change = Math.abs( val % 5 )
 
-    for sibling in $el.siblings()
-      unless $(sibling).hasClass('tally-mark') 
-        break
-      $(sibling).remove()
+    next = $el.next()
+    $(next).remove() if $(next).hasClass('tally-mark')
 
-    $el.after $('<span>').addClass("tally-mark").text change unless change == 0
-    $el.after $('<span>').addClass("tally-mark").text(5) for i in [0...fives]
+    new_val = "#{( 5 for i in [0...fives] ).join('')}#{ if change == 0 then '' else change }"
+    
+    $hashEl = $el.after( $('<span>').addClass( $el.attr("class") ).addClass("tally-mark").text(new_val) )
+    $hashEl.css($el.attr("style") or '')
    
 
 window.TallyMarks = TallyMarks

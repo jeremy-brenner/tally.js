@@ -20,29 +20,27 @@
     };
 
     TallyMarks.prototype.doTally = function($el) {
-      var change, fives, i, sibling, val, _i, _j, _len, _ref, _results;
+      var $hashEl, change, fives, i, new_val, next, val;
       val = parseInt($el.text());
       if (isNaN(val)) {
         val = 0;
       }
       fives = parseInt(val / 5);
-      change = val % 5;
-      _ref = $el.siblings();
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        sibling = _ref[_i];
-        if (!$(sibling).hasClass('tally-mark')) {
-          break;
+      change = Math.abs(val % 5);
+      next = $el.next();
+      if ($(next).hasClass('tally-mark')) {
+        $(next).remove();
+      }
+      new_val = "" + (((function() {
+        var _i, _results;
+        _results = [];
+        for (i = _i = 0; 0 <= fives ? _i < fives : _i > fives; i = 0 <= fives ? ++_i : --_i) {
+          _results.push(5);
         }
-        $(sibling).remove();
-      }
-      if (change !== 0) {
-        $el.after($('<span>').addClass("tally-mark").text(change));
-      }
-      _results = [];
-      for (i = _j = 0; 0 <= fives ? _j < fives : _j > fives; i = 0 <= fives ? ++_j : --_j) {
-        _results.push($el.after($('<span>').addClass("tally-mark").text(5)));
-      }
-      return _results;
+        return _results;
+      })()).join('')) + (change === 0 ? '' : change);
+      $hashEl = $el.after($('<span>').addClass($el.attr("class")).addClass("tally-mark").text(new_val));
+      return $hashEl.css($el.attr("style") || '');
     };
 
     return TallyMarks;

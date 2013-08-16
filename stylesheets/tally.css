@@ -12,9 +12,10 @@
 }
 
 .tally {
-  font-size: 0em; 
+  display: none;
 }
 
 .tally-mark {
+  display: inline-block;
   font-family: 'tallymarksregular';
 }
