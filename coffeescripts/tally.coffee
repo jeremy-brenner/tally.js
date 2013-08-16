@@ -11,7 +11,7 @@ class TallyMarks
 
   doTally: ($el) ->
     val = parseInt( $el.text() )
-    return if isNaN val
+    val = 0 if isNaN val
     fives = parseInt( val / 5 )
     change = val % 5
 

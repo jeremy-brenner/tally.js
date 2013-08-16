@@ -23,7 +23,7 @@
       var change, fives, i, sibling, val, _i, _j, _len, _ref, _results;
       val = parseInt($el.text());
       if (isNaN(val)) {
-        return;
+        val = 0;
       }
       fives = parseInt(val / 5);
       change = val % 5;
