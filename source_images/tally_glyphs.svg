@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 2">
+  <defs
+     id="defs5498">
+    <font
+       horiz-adv-x="1024"
+       id="font2992"
+       inkscape:label="font 1">
+      <font-face
+         units-per-em="1024"
+         id="font-face2994"
+         font-family="TallyMarks" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph2996" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph3110"
+         unicode="1"
+         d="M 264.26916,738.25594 318.70464,774.54626 336.84981,60.83658 282.41432,24.54626 z" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph3212"
+         unicode="2"
+         d="M 397.56276,737.79779 451.99824,774.08811 470.1434,60.37843 415.70792,24.0881 z m -133.06452,0 54.43548,36.29032 L 337.07889,60.37843 282.6434,24.0881 z" />
+      <glyph
+         glyph-name="glyph 3"
+         id="glyph3314"
+         unicode="3"
+         d="M 530.22198,738.82862 584.65747,775.11894 602.80263,61.40926 548.36714,25.1189 z m -133.06451,0 54.43548,36.29032 L 469.73811,61.40926 415.30263,25.1189 z m -133.06452,0 54.43548,36.29032 L 336.6736,61.40926 282.23811,25.1189 z" />
+      <glyph
+         glyph-name="glyph 4"
+         id="glyph3416"
+         unicode="4"
+         d="M 664.29972,737.41011 718.7352,773.70043 736.88036,59.99075 682.44488,23.7004 z m -133.06452,0 54.43549,36.29032 L 603.81585,59.99075 549.38036,23.7004 z m -133.06451,0 54.43548,36.29032 L 470.75133,59.99075 416.31585,23.7004 z m -133.06452,0 54.43548,36.29032 L 337.68682,59.99075 283.25133,23.7004 z" />
+      <glyph
+         glyph-name="glyph 5"
+         id="glyph3518"
+         unicode="5"
+         d="m 920.47007,170.07746 -42.3387,-42.33872 -798.387315,514.11303 42.338725,42.33872 z m -262.5001,568.54853 54.4355,36.29033 18.1452,-713.70967 -54.4355,-36.29033 z m -133.06451,0 54.4355,36.29033 18.14516,-713.70967 -54.4355,-36.29033 z m -133.06455,0 54.4355,36.29033 18.14516,-713.70967 -54.43549,-36.29033 z m -133.06455,0 54.4355,36.29033 18.14516,-713.70967 -54.43549,-36.29033 z" />
+    </font>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="740"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.454"
+     inkscape:cx="318.28194"
+     inkscape:cy="334.27493"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="layer1"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="200"
+       id="guide5596" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="500,1099.1189"
+       id="guide3100" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path3505"
+       style="fill:#000000"
+       d="M 920.47007,853.92254 878.13137,896.26126 79.744055,382.14823 122.08278,339.80951 z m -262.5001,-568.54853 54.4355,-36.29033 18.1452,713.70967 -54.4355,36.29033 z m -133.06451,0 54.4355,-36.29033 18.14516,713.70967 -54.4355,36.29033 z m -133.06455,0 54.4355,-36.29033 18.14516,713.70967 -54.43549,36.29033 z m -133.06455,0 54.4355,-36.29033 18.14516,713.70967 -54.43549,36.29033 z" />
+  </g>
+  <style
+     id="style3055">.s0{fill:#000;}</style>
+  <style
+     id="style3169">.s0{fill:#000;}</style>
+  <style
+     id="style3271">.s0{fill:#000;}</style>
+  <style
+     id="style3373">.s0{fill:#000;}</style>
+  <style
+     id="style3475">.s0{fill:#000;}</style>
+</svg>
